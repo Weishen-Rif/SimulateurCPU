@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
 # Projet CPO : Simulateur CPU et Assembleur en Java
 
-Projet réalisé dans le cadre du cours de Conception et Programmation Objet (L3 IRT / STRI1A) encadré par M. Patrice Torguet à l'Université Paul Sabatier (UPSITECH).
+Projet réalisé dans le cadre du cours de Conception et Programmation Objet (L3 IRT / STRI1A) encadré par M. Patrice Torguet à l'Université de Toulouse.
 
 ## Description
 Ce projet consiste à développer un simulateur de processeur accompagné de son assembleur. L'application est capable de lire un programme textuel (instructions assembleur), de le traduire en codes numériques (Opcodes), de le charger dans une mémoire RAM simulée de 64 Ko, puis de l'exécuter via un processeur virtuel gérant 16 registres et une ALU.
@@ -14,7 +14,7 @@ Le noyau fonctionnel du simulateur est terminé à 100%. Les étapes 1 à 5 du c
 - **Étape 4** : Structures de contrôle et branchements mémoire (`jump`, `beq`, `bne`).
 - **Étape 5** : Utilisation de registres d'index pour les tableaux et directives `data` / `string` (encodage UTF-8).
 
-## 🛠Outils et Architecture
+## Outils et Architecture
 - **Langage** : Java
 - **Gestionnaire de projet** : Maven
 - **Framework de test** : JUnit 4
@@ -22,7 +22,7 @@ Le noyau fonctionnel du simulateur est terminé à 100%. Les étapes 1 à 5 du c
 
 Le code source est organisé de manière modulaire (séparation de la logique dans les paquetages `fr.stri.projet.cpu`, `fr.stri.projet.memoire`, `fr.stri.projet.assembleur`).
 
-## ⚙️ Compilation et Exécution
+## Compilation et Exécution
 Le projet utilise l'architecture standard Maven (`src/main` pour les sources, `src/test` pour les tests).
 
 **Pour compiler le projet :**
