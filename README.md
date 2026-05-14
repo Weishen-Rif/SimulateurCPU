@@ -27,21 +27,36 @@ Le projet utilise l'architecture standard Maven (`src/main` pour les sources, `s
 
 **Pour compiler le projet :**
 ```bash
-mvn clean compile```
+mvn clean compile
+```
 
-Pour exécuter le programme : Vous pouvez lancer le projet directement depuis votre IDE (IntelliJ IDEA, NetBeans, Eclipse) en exécutant la méthode main située dans la classe Main.java (src/main/java/fr/stri/projet/Main.java).
-Tests Unitaires
-La validation du code est assurée par des tests unitaires automatisés sous JUnit, reposant sur l'utilisation de fixtures (@Before) et de la métaphore de l'oracle (assertEquals). Nous avons isolé les tests pour ProcesseurTest, AssembleurTest et ALUTest.
-Pour lancer la suite de tests :
+**Pour exécuter le programme :**
+
+Vous pouvez lancer le projet directement depuis votre IDE (IntelliJ IDEA, NetBeans, Eclipse) en exécutant la méthode main située dans la classe Main.java (src/main/java/fr/stri/projet/Main.java).
+
+## Tests Unitaires
+
+La validation du code est assurée par des tests unitaires automatisés sous JUnit, reposant sur l'utilisation de fixtures (@Before) et de la métaphore de l'oracle (assertEquals).
+
+Nous avons isolé les tests pour ProcesseurTest, AssembleurTest et ALUTest.
+
+**Pour lancer la suite de tests :**
+
+```bash
 mvn test
-Perspectives (Pour le Dépôt Final du 24 mai)
-Maintenant que le simulateur de base est fonctionnel, nous prévoyons d'implémenter plusieurs extensions :
-[ ] Création d'une Interface Homme-Machine (IHM).
-[ ] Persistance des données de la mémoire (Base de données H2 ou Firebase).
-[ ] Interface de contrôle via un Bot Discord.
-Auteurs
-Ayoub BOUDOUHI (STRI1A)
-Ayyub BOUTAHIR (L3 IRT)
+```
+
+## Perspectives (Pour le Dépôt Final du 24 mai)
+
+Maintenant que le simulateur de base est fonctionnel, nous prévoyons d'implémenter Plusieurs extensions :
+
+- Création d'une Interface Homme-Machine (IHM).
+- Persistance des données de la mémoire (Base de données H2 ou Firebase).
+- Interface de contrôle via un Bot Discord.
+
+Auteurs :
+Ayoub BOUDOUHI (STRI1A),
+Ayyub BOUTAHIR (L3 IRT) et
 Robin RIGAL (L3 IRT)
 
 ***
