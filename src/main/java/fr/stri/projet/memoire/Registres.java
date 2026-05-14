@@ -13,7 +13,8 @@ public class Registres {
      * Initialise un tableau de 16 registres.
      */
     public Registres() {
-        this.registres = new byte[8];
+        this.registres = new byte[16];
+
     }
 
     /**

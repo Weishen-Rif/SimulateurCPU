@@ -1,3 +1,4 @@
+package fr.stri.projet.cpu;
 import fr.stri.projet.cpu.Processeur;
 import fr.stri.projet.memoire.Memoire;
 import fr.stri.projet.memoire.Registres;
@@ -36,8 +37,6 @@ public class ProcesseurTest {
         memoire.ecrire(3, (byte) -1); // Opcode : 255/-1 (BREAK pour arrêter)
         // 2. QUAND : On exécute le processeur
         cpu.demarrer();
-        // Dans testLoadConstante()
-        System.out.println("Visuel - Valeur dans r2 : " + registres.lire(2));
         // 3. ALORS : On vérifie que r2 contient bien 15
         assertEquals("Le registre r2 doit contenir la valeur 15", 15, registres.lire(2));
     }
@@ -58,9 +57,6 @@ public class ProcesseurTest {
 
         // 2. QUAND : On lance le CPU
         cpu.demarrer();
-
-        // Affichage visuel à mettre IMPÉRATIVEMENT ICI, APRÈS demarrer()
-        System.out.println("Visuel - Valeur à l'adresse 100 : " + memoire.lire(100));
 
         // 3. ALORS : Vérification automatique
         assertEquals("La mémoire à l'adresse 100 doit contenir la valeur 42", 42, memoire.lire(100));
