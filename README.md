@@ -27,7 +27,8 @@ Le projet utilise l'architecture standard Maven (`src/main` pour les sources, `s
 
 **Pour compiler le projet :**
 ```bash
-mvn clean compile
+mvn clean compile```
+
 Pour exécuter le programme : Vous pouvez lancer le projet directement depuis votre IDE (IntelliJ IDEA, NetBeans, Eclipse) en exécutant la méthode main située dans la classe Main.java (src/main/java/fr/stri/projet/Main.java).
 Tests Unitaires
 La validation du code est assurée par des tests unitaires automatisés sous JUnit, reposant sur l'utilisation de fixtures (@Before) et de la métaphore de l'oracle (assertEquals). Nous avons isolé les tests pour ProcesseurTest, AssembleurTest et ALUTest.
